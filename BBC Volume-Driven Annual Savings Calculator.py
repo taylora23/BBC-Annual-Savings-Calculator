@@ -12,13 +12,13 @@ fixed_number_1 = 9469.21
 fixed_number_2 = 10392.27
 
 st.markdown(
-    '<p style="font-size:30px;">Enter the quantity of loader workers:</p>',
+    '<p style="font-size:20px;">Enter the quantity of loader workers:</p>',
     unsafe_allow_html=True
 )
 loader_qty = st.number_input("", min_value=0, step=1, format="%d", key="loader_input")
 
 st.markdown(
-    '<p style="font-size:30px;">Enter the quantity of HGV driver workers:</p>',
+    '<p style="font-size:20px;">Enter the quantity of HGV driver workers:</p>',
     unsafe_allow_html=True
 )
 driver_qty = st.number_input("", min_value=0, step=1, format="%d", key="driver_input")
@@ -46,5 +46,6 @@ if st.button("Calculate Savings"):
         """,
         unsafe_allow_html=True
     )
+
 
 
