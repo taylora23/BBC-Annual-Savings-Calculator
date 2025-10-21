@@ -36,11 +36,12 @@ if st.button("Calculate Savings"):
     st.markdown(
         f"""
         <p style='color:red; font-size:40px; font-weight:bold; text-align:center;'>
-            Annual Savings Achieved: {formatted_result}
+            Total Annual Savings Achieved: {formatted_result}
         </p>
         """,
         unsafe_allow_html=True
     )
+
 
 
 
