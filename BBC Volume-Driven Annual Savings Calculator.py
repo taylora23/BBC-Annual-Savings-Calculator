@@ -23,11 +23,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-user_input = st.number_input(
-  "", min_value=1, step=1, format="%d")
+loader_qty = st.number_input("Enter the quantity of loader workers:", min_value=0, step=1, format="%d")
+driver_qty = st.number_input("Enter the quantity of HGV driver workers:", min_value=0, step=1, format="%d")
 
-result_1 = user_input * fixed_number_1
-result_2 = user_input * fixed_number_2
+result_1 = user_input * loader_qty
+result_2 = user_input * driver_qty
 
 total_result = result_1 + result_2
 
