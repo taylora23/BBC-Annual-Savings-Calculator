@@ -32,7 +32,7 @@ if st.button("Calculate Savings"):
     formatted_result_2 = f"£{result_2:,.2f}"
     formatted_total_result = f"£{total_result:,.2f}"
 
-st.markdown(
+    st.markdown(
         f"""
         <p style='color:red; font-size:40px; font-weight:bold; text-align:center;'>
             Annual Savings for Loaders: {formatted_result_1}
