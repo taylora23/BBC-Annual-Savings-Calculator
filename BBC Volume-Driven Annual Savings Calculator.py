@@ -34,7 +34,7 @@ if st.button("Calculate Savings"):
 
     st.markdown(
         f"""
-        <p style='color:blue; font-size:40px; font-weight:bold; text-align:center;'>
+        <p style='color:red; font-size:40px; font-weight:bold; text-align:center;'>
             Annual Savings for Loaders: {formatted_result_1}
         </p>
         <p style='color:red; font-size:40px; font-weight:bold; text-align:center;'>
@@ -46,4 +46,5 @@ if st.button("Calculate Savings"):
         """,
         unsafe_allow_html=True
     )
+
 
