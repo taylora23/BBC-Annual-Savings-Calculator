@@ -27,20 +27,17 @@ st.markdown(
 
 driver_qty = st.number_input("", min_value=0, step=1, format="%d")
 
-result_1 = fixed_number_1 * loader_qty
-result_2 = fixed_number_2 * driver_qty
+if st.button("Calculate Savings"):
+    result_1 = fixed_number_1 * loader_qty
+    result_2 = fixed_number_2 * driver_qty
+    total_result = result_1 + result_2
+    formatted_result = f"£{total_result:,.2f}"
 
-total_result = result_1 + result_2
-
-formatted_result = f"£{total_result:,.2f}"
-
-st.markdown(
-    f"""
-    <p style='color:red; font-size:40px; font-weight:bold; text-align:center;'>
-        Annual Savings Achieved: {formatted_result}
-    </p>
-    """,
-    unsafe_allow_html=True
-)
-
-
+    st.markdown(
+        f"""
+        <p style='color:red; font-size:40px; font-weight:bold; text-align:center;'>
+            Annual Savings Achieved: {formatted_result}
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
