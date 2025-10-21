@@ -20,16 +20,12 @@ st.markdown(
 
 loader_qty = st.number_input("", min_value=0, step=1, format="%d", key="loader_input")
 
-result_1 = fixed_number_1 * loader_qty
-
 st.markdown(
     '<p style="font-size:30px;">Enter the quantity of HGV driver workers:</p>',
     unsafe_allow_html=True
 )
 
 driver_qty = st.number_input("", min_value=0, step=1, format="%d", key="driver_input")
-
-result_2 = fixed_number_2 * driver_qty
 
 if st.button("Calculate Savings"):
     result_1 = fixed_number_1 * loader_qty
@@ -45,10 +41,3 @@ if st.button("Calculate Savings"):
         """,
         unsafe_allow_html=True
     )
-
-
-
-
-
-
-
