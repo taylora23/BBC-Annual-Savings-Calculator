@@ -27,8 +27,8 @@ st.markdown(
 
 driver_qty = st.number_input("", min_value=0, step=1, format="%d")
 
-result_1 = user_input * loader_qty
-result_2 = user_input * driver_qty
+result_1 = fixed_number_1 * loader_qty
+result_2 = fixed_number_2 * driver_qty
 
 total_result = result_1 + result_2
 
@@ -42,4 +42,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
